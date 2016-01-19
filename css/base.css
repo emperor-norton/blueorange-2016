@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Nixie+One);
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+/* @import url(https://fonts.googleapis.com/css?family=Nixie+One); */
+/* @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville); */
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
 
 body {
 	background-color:#fff;
@@ -10,8 +11,12 @@ html, body {height:100%;}
 
 a:hover {
 	text-decoration: none;
-}
+	}
 
+a:link, a:visited {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+	}
 
 /* This sets the diagonal line for the background */
 .hero {
@@ -40,7 +45,7 @@ a:hover {
 	background-size: 8000px;
 	margin-top:0px;
 	background-repeat: no-repeat;
-	min-height: 350;
+	min-height: 350px;
 	height: 25%;}
 	
 	@media (min-width: 48em) {
@@ -54,6 +59,38 @@ a:hover {
 	height: 40%;}
 	}
 
+.hero-xsmall{
+	background: #00aeef url(../angle-big.svg);
+	background-position: bottom left;
+	background-size: 8000px;
+	margin-top:0px;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	height: 20%;}
+	
+	@media (min-width: 48em) {
+	.hero-xsmall {
+	background: #00aeef url(../angle-big.svg);
+	background-position: bottom left;
+	background-size: 8000px;
+	margin-top:0px;
+	background-repeat: no-repeat;
+	min-height: 350px;
+	height: 30%;}
+	}
+
+	@media (min-width: 68em) {
+	.hero-xsmall {
+	background: #00aeef url(../angle-big.svg);
+	background-position: bottom left;
+	background-size: 8000px;
+	margin-top:0px;
+	background-repeat: no-repeat;
+	min-height: 450px;
+	height: 40%;}
+	}
+
+	
 .hero-space {
 	padding-top:10%;}
 	
@@ -71,8 +108,8 @@ a:hover {
 	}
 	
 h1 {
-	font-family: 'Nixie One', cursive;
-	font-weight: 600;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
 	font-size: 2.5em;
 	color: rgba(255, 255, 255, 0.9);}
 	
@@ -82,8 +119,8 @@ h1 {
 	}
 	
 h2 {
-	font-family: 'Nixie One', cursive;
-	font-weight: 600;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
 	font-size: 2.25em;
 	color: rgba(0, 0, 0, 0.9);}
 	
@@ -196,15 +233,14 @@ footer {
 	}
 
 footer ul {
-    font-size: .8em;
+    font-size: .9em;
 	line-height: 3em;
-	color: rgba(0, 0, 0, 0.8);}
+	color: rgba(0, 0, 0, 0.6);
 	}
 
-footer a:link, a:visited {
-	text-decoration: underline;
-	color: #00aeef;
-	background-color: yellow;
+a:link, a:visited {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
 	}
 
 footer .list-inline-item {
